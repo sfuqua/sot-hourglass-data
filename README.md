@@ -1,9 +1,27 @@
 # SoT Hourglass Notebook
 This repo contains a [Jupyter Notebook](https://jupyter.org/) for tracking and analyzing Sea of Thieves data, specifically Allegiance ("XP") and gold earned from engaging with Season 8 PvP features.
 
-## Disclosure
+## Disclosure & methods
 
-The author of this project is a Microsoft employee. I play Sea of Thieves in my free time and do not have access to internal game data. All data in this Notebook was gathered via inspection of API calls made from https://www.seaofthieves.com/profile/reputation. Any comments in this project about how the game "works" are based on assessment of this data, as a fan, and are not definitive statements, and are not backed by any private information from Rare.
+**The author of this project is a Microsoft employee.** I play Sea of Thieves in my free time and do **not** have private access to internal game data. All data in this Notebook was gathered via publicly inspectable API calls made from https://www.seaofthieves.com/profile/reputation.
+
+At the time of writing, there is an API call with the following structure:
+
+```json
+    "PirateLord": {
+        "Motto": "Defenders of the Waves",
+        "Intro": "The Guardians of Fortune fight with honour to protect the Sea of Thieves and all that threatens the pirate's life",
+        "Level": 27,
+        "Xp": 2740,
+        "NextCompanyLevel": {
+            "Level": 28,
+            "XpRequiredToAttain": 10386
+        },
+```
+
+Note that this snapshot contains my current level, current XP, and metadata about the *next* level. By checking these values before and after an event that grants XP, you can use arithmetic to figure out how much you earned between API calls. By doing this many times while progressing through the system, you can slowly gather how much XP is required to level from 1-100 and how much you are earning for each activity along the way.
+
+Any comments in this project about how the game "works" are based on assessment of this data, as a fan, and are not definitive statements, and are not backed by any private information from Rare.
 
 The data available here is accurate to the best of my knowledge, but could be changed by Rare at any time with game service updates, and there could always be errors/typos in transcription or in my code.
 
