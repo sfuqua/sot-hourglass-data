@@ -1,6 +1,12 @@
 # SoT Hourglass Notebook
 This repo contains a [Jupyter Notebook](https://jupyter.org/) for tracking and analyzing Sea of Thieves data, specifically Allegiance ("XP") and gold earned from engaging with Season 8 PvP features.
 
+## Disclosure
+
+The author of this project is a Microsoft employee. I play Sea of Thieves in my free time and do not have access to internal game data. All data in this Notebook was gathered via inspection of API calls made from https://www.seaofthieves.com/profile/reputation. Any comments in this project about how the game "works" are based on assessment of this data, as a fan, and are not definitive statements, and are not backed by any private information from Rare.
+
+The data available here is accurate to the best of my knowledge, but could be changed by Rare at any time with game service updates, and there could always be errors/typos in transcription or in my code.
+
 ## Getting started
 
 1. Install Python 3
