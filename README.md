@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sfuqua/sot-hourglass-data/main?labpath=SoT-S8-Data.ipynb)
+
 # SoT Hourglass Notebook
 This repo contains a [Jupyter Notebook](https://jupyter.org/) for tracking and analyzing Sea of Thieves data, specifically Allegiance ("XP") and gold earned from engaging with Season 8 PvP features.
 
