@@ -30,7 +30,7 @@ The data available here is accurate to the best of my knowledge, but could be ch
 ## Getting started
 
 1. Install Python 3
-2. `pip install`: notebook, numpy, scipy, matplotlib, pandas
+2. `pip install`: notebook, numpy, scipy, matplotlib, pandas, ipywidgets (in case this list gets outdated, cross-reference with [requirements.txt](requirements.txt)
 3. Open the Notebook file using Jupyter, e.g., `jupyter SoT-S8-Data.ipynb`
 4. Run all cells. Once every cell has executed once, you can start to play with the widgets on the progression estimator and simulator.
 
