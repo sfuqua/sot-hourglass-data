@@ -49,7 +49,7 @@ For example:
 
 ```python
 # Allegiance/XP for losing a fight
-GAIN_LOSS = 560
+GAIN_LOSS = 700
 
 # Allegiance/XP for sinking another ship
 # Index == streak
