@@ -7,7 +7,7 @@ This repo contains a [Jupyter Notebook](https://jupyter.org/) for tracking and a
 
 **The author of this project is a Microsoft employee.** I play Sea of Thieves in my free time and do **not** have private access to internal game data. All data in this Notebook was gathered via publicly inspectable API calls made from https://www.seaofthieves.com/profile/reputation.
 
-At the time of writing, there is an API call with the following structure:
+Prior to February 2023, there was an API call with the following structure:
 
 ```json
     "PirateLord": {
@@ -26,6 +26,12 @@ Note that this snapshot contains my current level, current XP, and metadata abou
 Any comments in this project about how the game "works" are based on assessment of this data, as a fan, and are not definitive statements, and are not backed by any private information from Rare.
 
 The data available here is accurate to the best of my knowledge, but could be changed by Rare at any time with game service updates, and there could always be errors/typos in transcription or in my code.
+
+Note that some time between 1/31 and 2/24, the API contract was changed to not return "Xp" or "NextCompanyLevel".
+
+Instead, only a "Progress" float is returned that provides the fraction of the next level earned.
+
+For example, `"Progress": 0.25` indicates the user has 25% of the way to their next level in that company.
 
 ## Getting started
 
